@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# This is jetha Lal ki Duniya
+<< comment
+ye multi line commente hai aise 
+dete hai
+ 'yha par name variable hai'
+comment
+
+name="jetha"
+echo "name is $name, and date is $(date)"
+<< comment
+' ( yha par & isliye laga ki ham shell ko bta rhe hai ki ye string hamara variable hai jise tumhe exicute karna hai)'
+comment
+ 
+echo "enter the name:"
+
+read username
+
+echo "You entered $username" 
+<< comment 
+ ye $0 $1 $2 ye ham argument pass kar rhe hai isse ham matltiple user create kar sakte ak baar me 5 user add 
+
+comment
+
+echo "The Characters in  $0 are: $1 $2" 
