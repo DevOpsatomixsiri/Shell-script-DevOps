@@ -12,8 +12,12 @@ else
 endif
 
 build:
+<<<<<<< HEAD
 	@echo "$(OS_MSG)"
 	$(DOCKER_COMPOSE) build
+=======
+	          $(DOCKER_COMPOSE) build	 
+>>>>>>> c807fe3f197574d99a9f6adb83e2d7c5e4e57953
 
 up:   
 	@echo "$(OS_SMG)"
