@@ -1,13 +1,8 @@
-version: "3.8"
-
 services:
   mysql:
-    user: "${USER_ID}:${GROUP_ID}"
+    user: "${UID}:${GID}"
     image: mysql:5.7
     container_name: mysql
-  flask-app:
-    build: .
-    user: "${USER_ID}:${GROUP_ID}"
 
     environment:
       MYSQL_ROOT_PASSWORD: root
